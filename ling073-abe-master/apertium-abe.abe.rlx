@@ -1,0 +1,28 @@
+# Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
+DELIMITERS = "<.>" ;
+
+# We can define sets for common tag clusters
+# LIST Case = (n s) (n p) ; # A set that matches either a Noun Singular or a Noun Plural
+
+LIST O3SGDEFNN = o_3sg_def_nn;
+LIST O3SGDEFAA = o_3sg_def_aa;
+LIST NOUN = n;
+LIST NNNOUN = n nn;
+LIST AANOUN = n aa;
+
+SECTION
+# If the following word is an animate noun, the verb will mark its object as animate. THe same is true for inanimate.
+
+REMOVE O3SGDEFNN IF (1 (n aa)) ;
+REMOVE O3SGDEFAA IF (1 (n nn)) ;
+
+# If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
+# SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
+
+# Resources:
+# http://visl.sdu.dk/cg3.html
+# http://groups.google.com/group/constraint-grammar
+# http://kevindonnelly.org.uk/2010/05/constraint-grammar-tutorial/
+# https://wiki.apertium.org/wiki/Constraint_Grammar
+# https://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
+

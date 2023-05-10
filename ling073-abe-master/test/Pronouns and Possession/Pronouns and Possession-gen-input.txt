@@ -1,0 +1,26 @@
+^kaozem<n><aa><px1sg>$
+^kaozem<n><aa><px2sg>$
+^kaozem<n><aa><px3sg>$
+^kaozem<n><aa><px1pl excl>$
+^kaozem<n><aa><px1pl incl>$
+^kaozem<n><aa><px2pl>$
+^kaozem<n><aa><px3pl>$
+^kaozem<n><aa><pl><px1sg>$
+^kaozem<n><aa><pl><px2sg>$
+^kaozem<n><aa><pl><px3sg>$
+^kaozem<n><aa><pl><px1pl excl>$
+^kaozem<n><aa><pl><px1pl incl>$
+^kaozem<n><aa><pl><px2pl>$
+^kaozem<n><aa><pl><px3pl>$
+^zigwada<n><nn><px1sg>$
+^zigwada<n><nn><px2sg>$
+^zigwada<n><nn><px3sg>$
+^zigwada<n><nn><px1pl excl>$
+^zigwada<n><nn><px2pl>$
+^zigwada<n><nn><px3pl>$
+^zigwada<n><nn><pl><px1sg>$
+^zigwada<n><nn><pl><px2sg>$
+^zigwada<n><nn><pl><px3sg>$
+^zigwada<n><nn><pl><px1pl excl>$
+^zigwada<n><nn><pl><px2pl>$
+^zigwada<n><nn><pl><px3pl>$

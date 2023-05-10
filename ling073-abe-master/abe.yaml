@@ -1,0 +1,213 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../abe.autogen.hfst
+    Morph: ../abe.automorf.hfst
+Tests:
+  Adjective Agreement:
+    askaskw<adj><aa><iv><p3>:
+    - askaskwigo
+    askaskw<adj><nn><iv><impers>:
+    - askaskwigen
+    ki<n><nn><pl>:
+    - kial
+    mamseguiwk<adj><nn><pl>:
+    - mamseguiwkil
+    nisw<adj><aa><pl>:
+    - niswak
+    pezo<n><aa><pl>:
+    - pezoak
+    wawlik<adj><nn><pl>:
+    - wawlikil
+    wȣb<adj><aa><iv><p3>:
+    - wȣbigo
+    wȣb<adj><nn><iv><impers>:
+    - wȣbigen
+  Adverbs:
+    abag<adj><stem><adv>:
+    - abagiwi
+    awas<adj><stem><adv><dim>:
+    - awasiosi
+    beska<adj><stem><adv><dim>:
+    - beskaiwes
+    gag<adj><stem><adv><dim>:
+    - gagiwsi
+    maôwiwi<adj><stem><adv><emph>:
+    - maôwiwitta
+    ms<adj><stem><adv>:
+    - msiwi
+    msiwi<adj><stem><adv><emph>:
+    - meziwitta
+    nabi<pt><adv>:
+    - nabiwi
+    nakô<adj><stem><adv>:
+    - nakôiwi
+    niziwi<adj><stem><adv><emph>:
+    - niziwitta
+  Locative Case:
+    ababskweda<n><loc>:
+    - ababskwedak
+    abagapskw<n><loc>:
+    - abagapskok
+    abagijiman<n><loc>:
+    - abagijimanek
+    gȣgajigapskw<n><loc>:
+    - gȣgajigapskok
+    msazesko<n><loc>:
+    - msazeskok
+    sibsiz<n><loc>:
+    - sibsizek
+    skamoniodebkwanal<n><loc><pl>:
+    - skamoniodebkwanikok
+    skweda<n><loc><pl>:
+    - Skwedaikok
+  Morphology: {}
+  Noun Pluralization:
+    abitȣ<n><aa><pl>:
+    - abitȣk
+    adialwassem<n><aa><pl>:
+    - adialwassemok
+    alokad<n><aa><pl>:
+    - alokajik
+    alȣtegwihla<n><aa><pl>:
+    - alȣtegwihlak
+    amiskw<n><aa><pl>:
+    - amiskok
+    azeskwamagw<n><aa><pl>:
+    - azeskwamagok
+    badoziz<n><nn><pl>:
+    - badozizal
+    bakagaȣkwtag<n><nn><pl>:
+    - bakagaȣkwtagil
+    bakwaaskw<n><nn><pl>:
+    - bakwaaskol
+    bamskoda<n><nn><pl>:
+    - bamskodaal
+    bamskodaitegw<n><nn><pl>:
+    - bamskodaitegol
+    kanal<n><aa><pl>:
+    - kanalak
+    madagen<n><nn><pl>:
+    - madagenol
+    migwen<n><aa><pl>:
+    - migwenok
+    wizenȣ<n><nn><pl>:
+    - wizenȣk
+  Parts of Speech: {}
+  Pronouns and Possession:
+    kaozem<n><aa><pl><px1pl excl>:
+    - n'kaozemnawak
+    kaozem<n><aa><pl><px1pl incl>:
+    - k'kaozemnawak
+    kaozem<n><aa><pl><px1sg>:
+    - n'kaozemak
+    kaozem<n><aa><pl><px2pl>:
+    - k'kaozemwȣk
+    kaozem<n><aa><pl><px2sg>:
+    - k'kaozemak
+    kaozem<n><aa><pl><px3pl>:
+    - w'kaozemwȣ
+    kaozem<n><aa><pl><px3sg>:
+    - w'kaozema
+    kaozem<n><aa><px1pl excl>:
+    - n'kaozemna
+    kaozem<n><aa><px1pl incl>:
+    - k'kaozemna
+    kaozem<n><aa><px1sg>:
+    - n'kaozem
+    kaozem<n><aa><px2pl>:
+    - k'kaozemwȣ
+    kaozem<n><aa><px2sg>:
+    - k'kaozem
+    kaozem<n><aa><px3pl>:
+    - w'kaozemwȣ
+    kaozem<n><aa><px3sg>:
+    - w'kaozema
+    zigwada<n><nn><pl><px1pl excl>:
+    - n'zigwadanawal
+    zigwada<n><nn><pl><px1sg>:
+    - n'zigwadaal
+    zigwada<n><nn><pl><px2pl>:
+    - k'zigwadanowȣl
+    zigwada<n><nn><pl><px2sg>:
+    - k'zigwadaal
+    zigwada<n><nn><pl><px3pl>:
+    - w'zigwadanowȣl
+    zigwada<n><nn><pl><px3sg>:
+    - w'zigwadaal
+    zigwada<n><nn><px1pl excl>:
+    - n'zigwadana
+    zigwada<n><nn><px1sg>:
+    - n'zigwada
+    zigwada<n><nn><px2pl>:
+    - k'zigwadawȣ
+    zigwada<n><nn><px2sg>:
+    - k'zigwada
+    zigwada<n><nn><px3pl>:
+    - w'zigwadawȣ
+    zigwada<n><nn><px3sg>:
+    - w'zigwada
+  Spell Relax: {}
+  Verbs:
+    mil<v><tv><p3><pri><def><aa><o_pl3>:
+    - n'milegonanawak
+    mil<v><tv><p3><pri><def><aa><o_sg3>:
+    - n'milegonana
+    mil<v><tv><p3><pri><def><nn><o_pl3>:
+    - n'milegonal
+    mil<v><tv><p3><pri><def><nn><o_sg3>:
+    - n'milegonana
+    mil<v><tv><p3><pri><ind><an><obj>:
+    - miliba
+    mil<v><tv><s_pl1><excl><pri><def><nn><o_pl3>:
+    - n'milȣnanawal
+    mil<v><tv><s_pl1><excl><pri><def><nn><o_sg3>:
+    - n'milȣnana
+    mil<v><tv><s_pl1><excl><pri><ind><an><obj>:
+    - n'milȣnana
+    mil<v><tv><s_pl1><incl><pri><def><nn><o_pl3>:
+    - k'milȣnanawal
+    mil<v><tv><s_pl1><incl><pri><def><nn><o_sg3>:
+    - k'milȣnana
+    mil<v><tv><s_pl1><incl><pri><ind><an><obj>:
+    - k'milȣnana
+    mil<v><tv><s_pl2><pri><def><aa><o_pl3>:
+    - k'milinnȣk
+    mil<v><tv><s_pl2><pri><def><aa><o_sg3>:
+    - k'milinnȣ
+    mil<v><tv><s_pl2><pri><def><nn><o_pl3>:
+    - k'milinnȣl
+    mil<v><tv><s_pl2><pri><def><nn><o_sg3>:
+    - k'milinnȣ
+    mil<v><tv><s_pl2><pri><ind><an><obj>:
+    - k'milegw
+    mil<v><tv><s_pl3><pri><def><nn><o_pl3>:
+    - w'milȣnnȣl
+    mil<v><tv><s_pl3><pri><def><nn><o_sg3>:
+    - w'milȣnnȣ
+    mil<v><tv><s_pl3><pri><ind><an><obj>:
+    - w'milȣnnȣ
+    mil<v><tv><s_sg1><pri><def><nn><o_pl3>:
+    - n'milȣnal
+    mil<v><tv><s_sg1><pri><def><nn><o_sg3>:
+    - n'milȣn
+    mil<v><tv><s_sg1><pri><ind><an><obj>:
+    - n'milȣna
+    mil<v><tv><s_sg2><pri><def><aa><o_pl3>:
+    - k'milinanawak
+    mil<v><tv><s_sg2><pri><def><aa><o_sg3>:
+    - k'milinana
+    mil<v><tv><s_sg2><pri><def><nn><o_pl3>:
+    - k'milinanawal
+    mil<v><tv><s_sg2><pri><def><nn><o_sg3>:
+    - k'milinana
+    mil<v><tv><s_sg2><pri><ind><an><obj>:
+    - k'mili
+    mil<v><tv><s_sg3><pri><def><nn><o_pl3>:
+    - w'milȣn
+    mil<v><tv><s_sg3><pri><def><nn><o_sg3>:
+    - w'milȣn
+    mil<v><tv><s_sg3><pri><ind><an><obj>:
+    - w'milȣna
+  w: {}
+  ȣ and ô: {}

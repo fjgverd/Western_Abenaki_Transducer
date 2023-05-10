@@ -1,0 +1,79 @@
+Alphabet
+ A B C D E F G H I J K L M N O Ô P R S T U W Y Z Ȣ
+ a b c d e f g h i j k l m n o ô p r s t u w y z ȣ ʻ
+ %>:0
+ %{A%}:a %{A%}:0 %{A%}:i %{A%}:o
+ %{a%}:a %{a%}:0
+ %{w%}:w %{w%}:0
+ %{W%}:w %{W%}:o
+ %{I%}:e %{I%}:o %{I%}:0
+ %{D%}:d %{D%}:j
+ %{d%}:d %{d%}:0
+ %{k%}:k %{k%}:0
+ %{ȣ%}:ȣ %{ȣ%}:0
+ %{Ȣ%}:ȣ %{Ȣ%}:a %{Ȣ%}:0
+ %{SG%}:0
+ %{PL%}:0
+ %{LOC%}:0
+ %{ʻ%}:ʻ %{ʻ%}:0
+;
+Sets
+
+Vowel = A E I O Ô Ȣ U Y
+        a e i o ô ȣ u y ;
+
+Plosive = P T K B D G 
+          p t k b d g ;
+
+Rules
+"{D} realizes as j root finally in an animate plural"
+%{D%}:j <=> _ %>: %{PL%}: %{A%}: k ;
+
+"{A} realizes as i after j and g"
+%{A%}:i <=> [ :j | g: ] %>: %{PL%}: _ ;
+
+"{w} realizes as nothing root finally in the plural and locative"
+%{w%}:0 <=> _ %>: [ %{PL%}: | %{LOC%}: ] ;
+
+"{A} realizes as o after gw and kw"
+%{A%}:o <=> %{w%}: %>: %{PL%}: _ ;
+
+"{A} realizes as nothing following ȣ and a in the animate plural"
+%{A%}:0 <=> [ ȣ | a ] %>: %{PL%}: _ k ;
+
+"{A} realizes as nothing following ȣ"
+%{A%}:0 <=> :ȣ _ ;
+
+"{A} realizes as nothing following ȣ in the inanimate plural"
+%{A%}:0 <=> ȣ %>: %{PL%}: _ l ;
+
+"{w} never surfaces word finally after nasals"
+%{w%}:0 <=> [ n | m ] _ ;
+
+"{I} realizes as nothing after a root final vowel in the locative"
+%{I%}:0 <=> :Vowel %>: %{LOC%}: _ ;
+
+"{w} realizes as nothing word finally in the locative"
+%{w%}:0 <=> %{LOC%}: %{I%}: k _ .#. ;
+
+"{W} realizes as w word finally"
+%{W%}:w <=> _ .#. ;
+
+"{I} realizes as o after an underlying w in the locative"
+%{I%}:o <=> %{w%}: %>: %{LOC%}: _ ;
+
+"{d} surfaces before i, a, o, ȣ, and {w}"
+%{d%}:d <=> _ %>: [ i | a | o | ȣ | %{w%} ] ;
+
+"{ȣ} realizes as nothing before a vowel"
+%{ȣ%}:0 <=> _ :Vowel ;
+
+"{ʻ} realizes as nothing before a plosive"
+ %{ʻ%}:0 <=> _ :Plosive ;
+
+! Resources:
+! https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
+! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
+! https://github.com/hfst/
+! https://wiki.apertium.org/wiki/Twol
+! https://wiki.apertium.org/wiki/Hfst

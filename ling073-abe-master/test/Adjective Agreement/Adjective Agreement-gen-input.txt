@@ -1,0 +1,9 @@
+^wȣb<adj><aa><iv><p3>$
+^wȣb<adj><nn><iv><impers>$
+^askaskw<adj><aa><iv><p3>$
+^askaskw<adj><nn><iv><impers>$
+^wawlik<adj><nn><pl>$
+^mamseguiwk<adj><nn><pl>$
+^ki<n><nn><pl>$
+^nisw<adj><aa><pl>$
+^pezo<n><aa><pl>$

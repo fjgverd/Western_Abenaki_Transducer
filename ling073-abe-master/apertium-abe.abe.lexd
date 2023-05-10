@@ -1,0 +1,499 @@
+# Morphological Transducer for Western Abenaki
+
+# Part of speech categories
+# <n>      # Noun
+# <v>      # Verb
+# <adj>    # Adjective
+# <num>    # Numeral
+
+# <sent>   # Sentence-ending punctuation
+# <guio>   # Hyphen
+# <cm>     # Comma
+# <apos>   # Apostrophe
+# <quot>   # Quotation mark
+# <lquot>  # Left quotation mark
+# <rquot>  # Right quotation mark
+# <lpar>   # Left parenthesis
+# <rpar>   # Right parenthesis
+
+# Number morphology
+# <pl>     # Plural
+# <sg>     # Singular
+
+# Other symbols
+# >        # Morpheme boundary
+
+###############################################################################
+###                       M O R P H O T A C T I C S                         ###
+###############################################################################
+
+PATTERNS
+Nouns
+Verbs
+Conjunctions
+Pronouns
+Adverbs
+Prepositions
+Participles
+Particles
+VerbSer
+Adjectives
+
+PATTERN Nouns
+Possessive?(1) (NounRoot[aa] NounTags[aa]) Possessive?(2) NounPlural[aa]?
+Possessive?(1) (NounRoot[nn] NounTags[nn]) Possessive?(2) NounPlural[nn]?
+Possessive?(1) (NounRoot[aa] NounTags[aa]) [ <loc>:{LOC}{I}k{w} ]? Possessive?(2)
+Possessive?(1) (NounRoot[nn] NounTags[nn]) [ <loc>:{LOC}{I}k{w} ]? Possessive?(2)
+Possessive?(1) (NounRoot[aa] NounTags[aa]) [ <loc><pl>:{LOC}{PL}ikok ]? Possessive?(2)
+Possessive?(1) (NounRoot[nn] NounTags[nn]) [ <loc><pl>:{LOC}{PL}ikok ]? Possessive?(2)
+
+PATTERN Adjectives
+(AdjectiveRoot[aa] AdjectiveTags[aa]) AdjectivePlural[aa]?
+(AdjectiveRoot[nn] AdjectiveTags[nn]) AdjectivePlural[nn]?
+
+PATTERN Verbs
+VerbClitic(1)? (VerbRoot[tv,aa] VerbTags[tv,aa]) [ <ref>:>z ]? [ <past>:p ]? PeripheralFormative[tv,aa]? VerbClitic(2)?
+VerbClitic(1)? (VerbRoot[tv,nn] VerbTags[tv,nn]) [ <ref>:>z ]? [ <past>:p ]? PeripheralFormative[tv,nn]? VerbClitic(2)?
+VerbClitic(1)? (VerbRoot[iv,aa] VerbTags[iv,aa]) [ <ref>:>z ]? [ <past>:p ]? PeripheralFormative[iv,aa]? VerbClitic(2)?
+VerbClitic(1)? (VerbRoot[iv,nn] VerbTags[iv,nn]) [ <ref>:>z ]? [ <past>:p ]? PeripheralFormative[iv,nn]? VerbClitic(2)?
+(VerbRoot[tv,aa] VerbTags[tv,aa]) Subjunctive
+
+PATTERN VerbSer
+VerbSer
+
+PATTERN Conjunctions
+Conjunction
+
+PATTERN Pronouns
+Pronoun
+
+PATTERN Adverbs
+Adverb
+
+PATTERN Prepositions
+Preposition
+
+PATTERN Participles
+(VerbRoot[tv,aa] VerbTags[tv,aa]) [ <pt>:>t ]
+(VerbRoot[tv,nn] VerbTags[tv,nn]) [ <pt>:>t ]
+(VerbRoot[iv,aa] VerbTags[iv,aa]) [ <pt>:>t ]
+(VerbRoot[iv,nn] VerbTags[iv,nn]) [ <pt>:>t ]
+
+PATTERN Particles
+Particle
+
+#PATTERN VerbStem
+#VerbRoot Valence ScenarioMarker
+
+LEXICON VerbRoot
+mil:mil{ȣ}[tv,aa] #give
+wajȣnem:wajȣnem[tv,nn] #have
+namih:namih{ȣ}[tv,aa] #see
+wanȣdamina:wanȣdamina[iv,aa] #be crazy
+pado:pado[tv,aa] #bring
+paiȣd:paiȣda[iv,aa] #come
+wȣban:wȣban[iv,aa] #dawn
+kizi:kizi[iv,aa] #be able
+nanibȣsa:nanibȣsa[iv,aa] #walk all night
+kizilȣn:kizilȣn[iv,nn] #be after rain
+idamow:idamow[iv,nn] #mean
+almagwanosa:almagwanosa[iv,aa] #disappear
+kisgad:kisgad[iv,nn] #be daytime
+lidahȣdam:lidahȣdam[tv,nn] #think
+walȣbai:walȣbai[iv,aa] #be good looking
+pmȣwzi:pmȣwzi[iv,aa] #live
+agakimezi:agakimezi[tv,aa] #learn
+ozȣlȣwzȣ:ozȣlȣwz{ȣ}[iv,aa] #survive
+mȣjassa:mȣjassa[iv,aa] #begin
+kawhȣwa:kawhȣwa[iv,aa] #win
+migaka:migaka[iv,aa] #make war
+nlika:nlika[tv,aa] #kill
+wdena:wdena[tv,aa] #take someone
+wdena:wdena[tv,nn] #take something
+wakassigadek:wakassigadek[iv,nn] #few years pass
+mȣjaga:mȣjaga[iv,aa] #grow
+sogwebasob:sogwebasob[iv,nn] #melt
+nȣwat:nȣwat[iv,nn] #long ago
+kottlaboak:kottlaboak[iv,aa] #be together
+wajȣnem:wajȣnem[tv,nn] #have
+aimek:aimek[iv,aa] #be present
+wlȣmawaldam:wlȣmawaldam[tv,nn] #believe
+permosa:permosa[iv,aa] #walk
+wassana:wassana[tv,aa] #illuminate
+agwȣkazem:agwȣkazem[tv,nn] #burned food
+majipogwad:majipogwad[iv,nn] #taste bad
+wlipogwad:wlipogwad[iv,nn] #taste good
+osagipogwad:osagipogwad[iv,nn] #taste bitter
+mȣw:mȣw{Ȣ}[tv,aa] #eat
+dalawagipogwat:dalawagipogwat[iv,nn] #be crunchy
+bemioo:bemioo[iv,nn] #be greasy
+ponamen:ponamen[iv,nn] #put
+alaji:alaji[iv,aa] #be like
+agwȣgwahla:agwȣgwahla[iv,nn] #become spoiled
+liwitamen:liwitamen[tv,nn] #call
+acowiba:acowiba[iv,aa] #should
+achwi:achwi[iv,aa] #should
+ao:ao[iv,aa]
+
+LEXICON VerbSer
+ai<vbser><iv><aa>:ai[iv,aa]
+aidid<vbser><iv><aa><past>:aidid[iv,aa]
+
+LEXICON VerbTags
+<vb><tv><aa>:[tv,aa]
+<vb><tv><nn>:[tv,nn]
+<vb><iv><aa>:[iv,aa]
+<vb><iv><nn>:[iv,nn]
+
+LEXICON PeripheralFormative
+<prx><3pl>:{A}k[tv,aa]
+<prx><3pl>:{A}k[iv,aa]
+<prx><3pl>:{A}l[tv,nn]
+<prx><3pl>:{A}l[iv,nn]
+<obv><3sg>:{A}
+<obv><3pl>:{A}
+
+LEXICON Subjunctive
+<subj><pass><s_1sg>:imek
+<subj><pass><s_2sg>:elek
+<subj><pass><s_3sg>:ȣmek
+<subj><pass><s_1sg><neg>:imokw
+<subj><pass><s_2sg><neg>:elokw
+<subj><pass><s_3sg><neg>:ȣmokw
+
+<subj><ref><s_1sg>:zia
+<subj><ref><s_2sg>:zian
+<subj><ref><s_3sg>:zit
+<subj><ref><s_1sg><neg>:ziwa
+<subj><ref><s_2sg><neg>:ziwan
+<subj><ref><s_3sg><neg>:zikw
+
+<subj><s_1sg><o_2sg>:elan
+<subj><s_1sg><o_2pl>:elakw
+<subj><s_1sg><o_3sg>:ok
+<subj><s_2sg><o_1sg>:ian
+<subj><s_2sg><o_3sg>:ȣan
+<subj><s_3sg><o_1sg>:it
+<sub><s_3sg><o_2sg>:goam
+<subj><s_3sg><o_3sg>:ȣt
+<subj><s_1pl><o_2sg>:elak
+<subj><s_1pl_excl><o_3sg>:ȣak
+<subj><s_1pl_incl><o_3sg>:ȣakw
+<subj><s_2pl><o_1sg>:iakw
+<subj><s_2pl><o_3sg>:ȣakw
+<sub><s_3pl><o_1sg>:ihidit
+
+<subj><s_1sg><o_2sg><neg>:elowan
+<subj><s_1sg><o_2pl><neg>:elowakw
+<subj><s_1sg><o_3sg><neg>:ȣwa
+<subj><s_2sg><o_1sg><neg>:iwan
+<subj><s_2sg><o_3sg><neg>:ȣwan
+<subj><s_3sg><o_1sg><neg>:ikw
+<sub><s_3sg><o_2sg><neg>:gowwam
+<subj><s_3sg><o_3sg><neg>:ȣkw
+<subj><s_1pl><o_2sg><neg>:elowak
+<subj><s_1pl_excl><o_3sg><neg>:ȣwak
+<subj><s_1pl_incl><o_3sg><neg>:ȣwakw
+<subj><s_2pl><o_1sg><neg>:iwakw
+<subj><s_2pl><o_3sg><neg>:ȣwakw
+<sub><s_3pl><o_1sg><neg>:ihidikw
+
+LEXICON VerbClitic(2)
+:n{ʻ}{d}{ʻ}>   <s_1sg><o_3sg_ind>:
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_3sg_ind>:
+:>             <s_3sg><o_3sg_ind>:a
+:n{ʻ}{d}{ʻ}>   <s_1pl_excl><o_3sg_ind>:bna
+:k{ʻ}{d}{ʻ}>   <s_1pl_incl><o_3sg_ind>:bna
+:k{ʻ}{d}{ʻ}>   <s_2pl><o_3sg_ind>:ba
+:>             <s_3pl><o_3sg_ind>:ak
+
+:n{ʻ}{d}{ʻ}>   <s_1sg><o_3sg_def_nn>:n
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_3sg_def_nn>:n
+:w{ʻ}>         <s_3sg><o_3sg_def_nn>:n
+:n{ʻ}{d}{ʻ}>   <s_1pl_excl><o_3sg_def_nn>:nana
+:k{ʻ}{d}{ʻ}>   <s_1pl_incl><o_3sg_def_nn>:nana
+:k{ʻ}{d}{ʻ}>   <s_2pl><o_3sg_def_nn>:nnȣ
+:w{ʻ}>         <s_3pl><o_3sg_def_nn>:nnȣ
+
+:n{ʻ}{d}{ʻ}>   <s_1sg><o_3pl_def_nn>:nal
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_3pl_def_nn>:nal
+:w{ʻ}>         <s_3sg><o_3pl_def_nn>:n
+:n{ʻ}{d}{ʻ}>   <s_1pl_excl><o_3pl_def_nn>:nanawal
+:k{ʻ}{d}{ʻ}>   <s_1pl_incl><o_3pl_def_nn>:nanawal
+:k{ʻ}{d}{ʻ}>   <s_2pl><o_3pl_def_nn>:nnȣl
+:w{ʻ}>         <s_3pl><o_3pl_def_nn>:nnȣl
+
+:n{ʻ}{d}{ʻ}>   <s_1sg><o_3sg_def_aa>:na
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_3sg_def_aa>:na
+:w{ʻ}>         <s_3sg><o_3sg_def_aa>:na
+:n{ʻ}{d}{ʻ}>   <s_1pl_excl><o_3sg_def_aa>:nana
+:k{ʻ}{d}{ʻ}>   <s_1pl_incl><o_3sg_def_aa>:nana
+:k{ʻ}{d}{ʻ}>   <s_2pl><o_3sg_def_aa>:nnȣ
+:w{ʻ}>         <s_3pl><o_3sg_def_aa>:nnȣ
+
+:n{ʻ}{d}{ʻ}>   <s_1sg><o_3pl_def_aa>:na  #Dir/RL
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_3pl_def_aa>:na  #Dir/RL
+:w{ʻ}>         <s_3sg><o_3pl_def_aa>:na  #Dir/RL
+:n{ʻ}{d}{ʻ}>   <s_1pl_excl><o_3pl_def_aa>:nana  #Dir/RL
+:k{ʻ}{d}{ʻ}>   <s_1pl_incl><o_3pl_def_aa>:nana  #Dir/RL
+:k{ʻ}{d}{ʻ}>   <s_2pl><o_3sg_def_pl>:nnȣ  #Dir/RL
+:w{ʻ}>         <s_3pl><o_3sg_def_pl>:nnȣ  #Dir/RL
+
+:n{ʻ}{d}{ʻ}>   <s_3sg><o_1sg>:eg{W}
+:k{ʻ}{d}{ʻ}>   <s_3sg><o_2sg>:eg{W}
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_1sg>:el
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_1sg><ind_nn>:i
+:k{ʻ}{d}{ʻ}>   <s_2sg><o_1sg><def_nn>:in
+:k{ʻ}{d}{ʻ}>   <s_1sg><o_2sg><def_nn>:en
+
+LEXICON NounTags
+<n><aa>:[aa]
+<n><nn>:[nn]
+
+LEXICON AdjectiveTags
+<adj><aa>:[aa]
+<adj><nn>:[nn]
+
+LEXICON NounRoot
+kanal:kanal>[aa] #teakettle
+badoziz:badoziz>[nn] #little rowboat
+alokad:aloka{D}>[aa] #worker
+amiskw:amisk{w}>[aa] #beaver
+azeskwamagw:azeskwamag{w}>[aa] #mud fish
+abitȣ:abitȣ>[aa] #farmer
+alȣtegwihla:alȣtegwihla>[aa] #wood duck
+bamskoda:bamskoda>[nn] #meadow
+bakagaȣwtag:bakagaȣwtag>[nn] #crosspiece of a canoe
+bamskodaitegw:bamskodaiteg{w}>[nn] #prairie stream
+bakwaaskw:bakwaask{w}>[nn] #cattail
+wizenȣ:wizenȣ>[nn] #beaver castor
+migwen:migwen{w}>[aa] #feather
+madagen:magaden{w}>[nn] #hide
+adialwassem:adialwassem{w}>[aa] #hunting dog
+kaozem:kaozem>[aa] #cow
+kaozen:kaozen>[aa] #cow
+zigwada:zigwada>[nn] #skeleton
+ababskweda:ababskweda>[nn] #stove
+sibsiz:sibsiz>[aa] #little bird
+skweda:skweda>[nn] #fire
+msazesko:msazesko>[nn] #much mud
+abagapskw:abagapsk{w}>[nn] #flat rock
+skog:skog>[aa] #snake
+abagijiman:abagijiman>[nn] #rowboat
+gȣgajigapskw:gȣgajigapsk{w}>[nn] #cliff
+pkwami:pkwami>[aa] #ice
+aki:aki>[nn] #earth
+awaas:awaas>[aa] #wild animal
+awahȣdos:awahȣdos>[aa] #little devil, bug
+namas:namas>[aa] #fish
+nebes:nebes>[nn] #lake
+abazi:abazi>[aa] #tree
+abazi:abazi>[nn] #stick
+medawlinȣgan:medawlinȣgan>[nn] #shamanic power
+pȣgwas:pȣgwas>[aa] #moonlight
+managwȣn:managwȣn>[aa] #rainbow
+migakawinno:migakawinno>[aa] #fighter
+lakamigwezo:lakamigwezo>[aa] #family
+skamon:skamon>[nn] #corn
+nigȣ:nigȣ>[aa] #grandmother, old person
+lolol:lolol>[aa] #boogeyman
+odana:odana>[nn] #town
+wȣbanaki:wȣbanaki>[nn] #the east
+gaginidoleba:gaginidoleba>[aa] #big turtle
+galod:galod>[aa] #carrot
+nkawadsowȣgan:nkawadsowȣgan>[nn] #hope
+pezagwdamen:pezagwdamen>[aa] #blackberry
+dadan:dadan>[aa] #father
+kagagiiaji:kagagiiaji>[nn] #seasoned meat/anything else
+kizos:kizos>[aa] #sun, moon, month
+kelozowȣgan:kelozowȣgan>[nn] #word
+pȣgwas:pȣgwas>[aa] #moon
+managwȣn:managwȣn>[aa] #rainbow
+aki:aki>[nn] #land, world
+passodosawȣgan:passodosawȣgan>[nn] #approach
+aodowȣgan:aodowȣgan>[nn] #war
+kawhȣwawinno:kawhȣwawinno>[aa] #victor
+migakawinno:migakawinno>[aa] #warrior
+pazgo:pazgo>[aa] #old one
+wawidahȣzwȣgan:wawidahȣzwȣgan>[nn] #awareness
+pehanem:pehanem>[aa] #woman
+awȣzsis:awȣzsis>[aa] #child
+kȣkassigamigwzoak:kȣkassigamigwzoak>[aa] #tribe
+lakamigwezo:lakamigwezo>[aa] #family
+pkwami:pkwami>[aa] #snow
+awahȣdos:awahȣdos>[aa] #bug
+sips:sips>[aa] #bird
+namas:namas>[aa] #fish
+miliksanwȣgan:miliksanwȣgan>[nn] #strength
+sibo:sibo>[nn] #river
+nebes:nebes>[nn] #lake
+pizwikw:pizwik{w}>[nn] #plant
+abazi:abazi>[aa] #tree
+medawlinȣgan:medawlinȣgan>[nn] #magic power
+wassanmȣganihla:wassanȣganihla>[nn] #candlelight
+pemegawȣgan:pemegawȣgan>[nn] #dance
+wassakw:wassak{w}>[nn] #light
+abasandȣganal:abasandȣganal>[nn] #Northern Lights
+pebonki:pebonki>[nn] #north
+milȣd:milȣd>[aa] #giver
+noppawsawwino:noppawsawwinno>[aa] #scout
+alakws:alakws>[aa] #star
+lagwigid:lagwigid>[aa] #direction
+mesakwȣd:mesakwȣd>[aa] #finder
+alakwsȣwdi:alakwsȣwdi>[nn] #milky way
+spemki:spemki>[nn] #above land
+lȣdawȣgan:lȣdawȣgan>[nn] #ladder
+sȣgaiwios:sȣgaiwios>[nn] #lobster
+cape:cape>[nn] #coffee
+aplesa:aples{A}>[aa] #apple
+paskwaipowȣgan:pakwaipowȣgan>[nn] #lunch
+pagȣnis:pagȣnis>[nn] #little nut
+salsemimijowȣgan:salsemimijowȣgan>[nn] #fried food
+kwanogazid:kwanogazi{D}>[aa] #pear
+kalakȣn:kalakȣn>[aa] #cracker
+adlȣgwipowȣgan:adlȣgwipowȣgan>[nn] #dinner
+wizȣwibemi:wizȣwibemi>[aa] #butter
+pkwamipaks:pkwamipaks>[nn] #fridge
+skamon:skamon>[nn] #corn
+wasawa:wasawa>[nn] #squash
+adbakwa:adbakwa>[nn] #bean
+itsakaso:itsakaso>[aa] #sister
+magwa:magwa>[aa] #Iroquois
+abagigek:abagigk>[nn] #flat thing
+
+LEXICON AdjectiveRoot
+kchiazo:kchiazo>[aa] #old
+mlikigidjik:mlikigidjik>[aa] #strong
+kwina:kwina>[aa] #large
+nsȣzin:nsȣzin>[aa] #dangerous
+kwanakwizo:kwanakwizo>[aa] #tall
+abagigen:abagigen>[nn] #flat
+pȣgwi:pȣgwi>[nn] #pure
+kizachozid:kizachozi{D}>[aa] #ripe
+minȣboo:minȣboo>[aa] #juicy
+nhloa:nhloa>[aa] #three
+kwanogazid:kwanogazi{D}>[aa] #elongated
+
+LEXICON Conjunction
+ta<cnjcoo>:ta #and
+kanwa<cnjcoo>:kanwa #however
+ala<cnjcoo>:ala #or
+
+LEXICON Pronoun
+tȣni<prn><itg>:tȣni
+tȣnga<prn><itg>:tȣnga
+agma<prn><pers>:agma
+agmȣwȣ<prn><pers>:agmȣwȣ
+kagwi<prn><itg>:kagwi
+niuna<prn><pers>:niuna
+yugik<prn><det>:yugik
+iya<prn>:iya
+iolil<prn><det><nn>:iolil
+
+LEXICON Adverb
+ato<adv><pt>:ato
+kassi<adv>:kassi
+paami<adv><pt>:paami
+adoji<adv><pt>:adoji
+nidali<adv>:nidali
+mziwi<adv>:mziwi
+achi<adv><pt>:achi
+chakweniwi<adv>:chakweniwi
+nibȣiwiw<adv>:nibȣiwiw
+pamgisgak<adv>:pamgisgak
+ni<adv><pt>:ni
+wigawȣjiwi<adv>:wigawȣjiwi
+wlȣgwiga<adv>:wlȣgwiga
+pita<adv>:pita
+
+LEXICON Preposition
+alagui<pr>:alagui
+nspiwi<pr>:nspiwi
+spemek<pr>:spemek
+kizi<pr>:kizi
+waji<pr>:waji
+
+LEXICON Particle
+niba<itg>:niba
+oji<pt><pr>:oji
+wji<pt><pr>:wji
+alȣmi<pt><pr>:alȣmi
+alȣmiwi<pt><pr>:alȣmiwi
+ali<pt><pr>:ali
+kchi<pt><adj>:kchi
+paji<pt>:paji
+ȣnda<pt>:ȣnda
+ȣda<pt>:ȣda
+
+LEXICON NounPlural
+<pl>:{PL}{A}k[aa]
+<pl>:{PL}{A}l[nn]
+
+LEXICON AdjectivePlural
+<pl>:{PL}{A}k[aa]
+<pl>:{PL}{A}l[nn]
+
+LEXICON Possessive(2)
+:n{ʻ}   <px1sg>:
+:k{ʻ}   <px2sg>:
+:w{ʻ}   <px3sg>:{a}
+:n{ʻ}   <px1pl_excl>:na
+:k{ʻ}   <px1pl_incl>:na
+:k{ʻ}   <px2pl>:wȣ
+:w{ʻ}   <px3pl>:wȣ
+
+###############################################################################
+###                          L E X I C O N                                  ###
+###############################################################################
+
+PATTERN Number
+Numeral+ [<num>:]
+
+LEXICON Numeral
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+LEXICON Punctuation
+
+.<sent>:.
+..<sent>:..
+...<sent>:...
+;<sent>:;
+\:<sent>:\:
+!<sent>:!
+-<guio>:-
+—<guio>:—
+,<cm>:,
+?<sent>:?
+'<apos>:'
+"<quot>:"
+«<lquot>:«
+»<rquot>:»
+”<rquot>:”
+“<lquot>:“
+(<lpar>:(
+\]<rpar>:\]
+\[<lpar>:\[
+)<rpar>:)
+\\<sent>:\\
+\/<sent>:\/
+
+
+# Resources:
+# https://github.com/apertium/lexd/blob/master/Usage.md
+# https://wiki.apertium.org/wiki/List_of_symbols
+# https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
+# https://wiki.apertium.org/wiki/Lttoolbox_and_lexc
+# https://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
+# https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
+# https://github.com/hfst/
+# https://wiki.apertium.org/wiki/Hfst

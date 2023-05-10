@@ -1,0 +1,30 @@
+[4s1Vt3sEniET#0] ^bakwaaskol/bakwaaskw<n><nn><pl>/bakwaaskw<n><nn><px1sg><pl>/bakwaaskw<n><nn><px2sg><pl>$
+[/4s1Vt3sEniET]
+[5KE78DsYj0Op#0] ^wizenȣk/wizenȣ<n><nn><loc>/wizenȣ<n><nn><loc><px1sg>/wizenȣ<n><nn><loc><px2sg>$
+[/5KE78DsYj0Op]
+[6fARsGA7RZuC#0] ^badozizal/badoziz<n><nn><pl>/badoziz<n><nn><px1sg><pl>/badoziz<n><nn><px2sg><pl>/badoziz<n><nn><px3sg><pl>$
+[/6fARsGA7RZuC]
+[9IueA9rdNj9T#0] ^bakagaȣkwtagil/*bakagaȣkwtagil$
+[/9IueA9rdNj9T]
+[Dp1KepQCDTPI#0] ^bamskodaal/bamskoda<n><nn><pl>/bamskoda<n><nn><px1sg><pl>/bamskoda<n><nn><px2sg><pl>/bamskoda<n><nn><px3sg><pl>$
+[/Dp1KepQCDTPI]
+[KbCgieDm7rWj#0] ^madagenol/*madagenol$
+[/KbCgieDm7rWj]
+[Sz8ob3QNPd8Q#0] ^bamskodaitegol/bamskodaitegw<n><nn><pl>/bamskodaitegw<n><nn><px1sg><pl>/bamskodaitegw<n><nn><px2sg><pl>$
+[/Sz8ob3QNPd8Q]
+[TSeLWgAQE35p#0] ^kanalak/kanal<n><aa><pl>/kanal<n><aa><px1sg><pl>/kanal<n><aa><px2sg><pl>/kanal<n><aa><px3sg><pl>$
+[/TSeLWgAQE35p]
+[TVnVlelABd62#0] ^alȣtegwihlak/alȣtegwihla<n><aa><pl>/alȣtegwihla<n><aa><loc>$
+[/TVnVlelABd62]
+[Z6NZwlHY20AN#0] ^abitȣk/abitȣ<n><aa><pl>/abitȣ<n><aa><loc>$
+[/Z6NZwlHY20AN]
+[dROWJzYntPYI#0] ^adialwassemok/adialwassem<n><aa><pl>/adialwassem<n><aa><loc>$
+[/dROWJzYntPYI]
+[jVdXQFc8so5R#0] ^azeskwamagok/azeskwamagw<n><aa><pl>/azeskwamagw<n><aa><loc>$
+[/jVdXQFc8so5R]
+[kZzjncMqUehb#0] ^amiskok/amiskw<n><aa><pl>/amiskw<n><aa><loc>$
+[/kZzjncMqUehb]
+[peJwPakvjmaW#0] ^migwenok/migwen<n><aa><pl>/migwen<n><aa><loc>$
+[/peJwPakvjmaW]
+[u8iWCqQC0LPY#0] ^alokajik/alokad<n><aa><pl>/alokad<n><aa><px1sg><pl>/alokad<n><aa><px2sg><pl>/alokad<n><aa><loc>/alokad<n><aa><loc><px1sg>/alokad<n><aa><loc><px2sg>$
+[/u8iWCqQC0LPY]

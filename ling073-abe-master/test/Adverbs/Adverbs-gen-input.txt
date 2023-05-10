@@ -1,0 +1,10 @@
+^ms<adj><stem><adv>$
+^nabi<pt><adv>$
+^abag<adj><stem><adv>$
+^nakô<adj><stem><adv>$
+^msiwi<adj><stem><adv><emph>$
+^niziwi<adj><stem><adv><emph>$
+^maôwiwi<adj><stem><adv><emph>$
+^gag<adj><stem><adv><dim>$
+^awas<adj><stem><adv><dim>$
+^beska<adj><stem><adv><dim>$

@@ -1,0 +1,8 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+srcdir=@datarootdir@/apertium/apertium-abe
+
+Name: apertium-abe
+Description: Finite-state morphological transducer and constraint grammar for Western Abnaki
+Version: @VERSION@
+
